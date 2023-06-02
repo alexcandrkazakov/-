@@ -1,0 +1,14 @@
+def is_prime():
+    i=int(input("число "))
+    if 2<=i<=1000:
+        for n in range(2,i):
+            if i%n==0:
+                print("не простое ")
+                break
+            else:
+                print("простое")
+                break
+    elif i==1 or i==0:
+        print("простое")
+    else: print("число не подходит")             
+is_prime()
